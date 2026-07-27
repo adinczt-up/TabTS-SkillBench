@@ -1,0 +1,29 @@
+TabTS-SkillBench notices
+========================
+
+Nanobot
+-------
+
+The `nanobot/` directory is derived from:
+
+  Project: nanobot
+  Upstream: https://github.com/HKUDS/nanobot
+  Reference tag: v0.1.5.post3
+  Reference commit: 0b1631f33d8040802aa09d66a01bc731e3cb85a2
+  License: MIT
+
+The vendored tree contains substantial modifications and additions relative to
+that reference. The upstream MIT copyright and permission notice are preserved
+in `LICENSE`.
+
+Benchmark-specific material
+---------------------------
+
+The approved copyright holder and license for benchmark-specific code, tasks,
+Gold, contracts, Skills, and documentation have not yet been recorded. The
+root MIT file is retained for Nanobot compliance and must not be interpreted as
+a completed license grant for every benchmark-specific file.
+
+The project owners should publish an approved benchmark-specific license and
+ownership statement. The upstream Nanobot license does not by itself establish
+redistribution rights for independently authored benchmark material.

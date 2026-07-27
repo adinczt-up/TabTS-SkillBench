@@ -1,0 +1,470 @@
+[
+  {
+    "path": "skillmtts/standardized/azure-pdm/tables/errors.parquet",
+    "env_paths": [
+      "datasets/azure-pdm/errors.parquet"
+    ],
+    "sha256": "6e145e9107e73a9a5e3915f3970cf6ac97f9e4a3671558e894f8cdb62c6d9553",
+    "bytes": 20313,
+    "datasets": [
+      "azure-pdm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/azure-pdm/tables/failures.parquet",
+    "env_paths": [
+      "datasets/azure-pdm/failures.parquet"
+    ],
+    "sha256": "c26c97d837d2185ed942653a80320b9d21a405e10ef9839b7e7e5205a2835327",
+    "bytes": 4105,
+    "datasets": [
+      "azure-pdm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/azure-pdm/tables/machines.parquet",
+    "env_paths": [
+      "datasets/azure-pdm/machines.parquet"
+    ],
+    "sha256": "1eda89b906daac397286c23441930ee0fd1dfe4109f2ba7361a5276c88b52cb1",
+    "bytes": 1022,
+    "datasets": [
+      "azure-pdm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/azure-pdm/tables/maintenance.parquet",
+    "env_paths": [
+      "datasets/azure-pdm/maintenance.parquet"
+    ],
+    "sha256": "1d506059dc56fc58ca25ff0cf56087e226a05c3e008b26e885eda19234f5829a",
+    "bytes": 8152,
+    "datasets": [
+      "azure-pdm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/azure-pdm/tables/telemetry.parquet",
+    "env_paths": [
+      "datasets/azure-pdm/telemetry.parquet"
+    ],
+    "sha256": "981105715cce63a8ffc3b10de119d368620be4135b2283e860d9c90aad0a64e6",
+    "bytes": 27056122,
+    "datasets": [
+      "azure-pdm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/bdg2/tables/buildings.parquet",
+    "env_paths": [
+      "datasets/bdg2/buildings.parquet"
+    ],
+    "sha256": "da87f7707994a096317ee7b81d4b2d28d80d54168cc62e23b07b739cd017e6d9",
+    "bytes": 41100,
+    "datasets": [
+      "bdg2"
+    ],
+    "task_count": 24
+  },
+  {
+    "path": "skillmtts/standardized/bdg2/tables/meter_readings_benchmark.parquet",
+    "env_paths": [
+      "datasets/bdg2/meter_readings.parquet"
+    ],
+    "sha256": "82a49fe4ccaf314539d7563bc4d21eb143a760f044b71108f7f33794f6e09575",
+    "bytes": 150607783,
+    "datasets": [
+      "bdg2"
+    ],
+    "task_count": 24
+  },
+  {
+    "path": "skillmtts/standardized/bdg2/tables/sites.parquet",
+    "env_paths": [
+      "datasets/bdg2/sites.parquet"
+    ],
+    "sha256": "b0159c8e2f5ff4ad030629bdc06bca4c7cdf6638d71b11a590d0e4cd186d4cdb",
+    "bytes": 2062,
+    "datasets": [
+      "bdg2"
+    ],
+    "task_count": 24
+  },
+  {
+    "path": "skillmtts/standardized/bdg2/tables/weather_hourly.parquet",
+    "env_paths": [
+      "datasets/bdg2/weather_hourly.parquet"
+    ],
+    "sha256": "42c08bf1d1eb1424b5567280bc0dd83d5892a5ac6cb931b29e2ae233103b9b0b",
+    "bytes": 2269287,
+    "datasets": [
+      "bdg2"
+    ],
+    "task_count": 24
+  },
+  {
+    "path": "skillmtts/standardized/rel-event/tables/event_attendees.parquet",
+    "env_paths": [
+      "datasets/rel-event/event_attendees.parquet"
+    ],
+    "sha256": "99d9dcc77e4044075f0971310974bd8e8a81409833c113b5db83c64449c9b966",
+    "bytes": 13480252,
+    "datasets": [
+      "rel-event"
+    ],
+    "task_count": 66
+  },
+  {
+    "path": "skillmtts/standardized/rel-event/tables/event_features.parquet",
+    "env_paths": [
+      "datasets/rel-event/event_features.parquet"
+    ],
+    "sha256": "079bff25cf021bccc873faa7118f4884405519a5c629e54149e7b6530d4c880e",
+    "bytes": 56638796,
+    "datasets": [
+      "rel-event"
+    ],
+    "task_count": 66
+  },
+  {
+    "path": "skillmtts/standardized/rel-event/tables/event_interest.parquet",
+    "env_paths": [
+      "datasets/rel-event/event_interest.parquet"
+    ],
+    "sha256": "e2a3b6fcdd7072de7267e413e5a1c950bd0c89a3a8541f0533fc866a99c4cb34",
+    "bytes": 97924,
+    "datasets": [
+      "rel-event"
+    ],
+    "task_count": 66
+  },
+  {
+    "path": "skillmtts/standardized/rel-event/tables/events.parquet",
+    "env_paths": [
+      "datasets/rel-event/events.parquet"
+    ],
+    "sha256": "b7f7abffb7818fb6e211f64572e55fe28282e3ded745ba5ba848139db822549c",
+    "bytes": 26660555,
+    "datasets": [
+      "rel-event"
+    ],
+    "task_count": 66
+  },
+  {
+    "path": "skillmtts/standardized/rel-event/tables/user_friends.parquet",
+    "env_paths": [
+      "datasets/rel-event/user_friends.parquet"
+    ],
+    "sha256": "70df0bad8e7eff1405c72b5bc096914a530318280f4c81d4d38c904ac94186e6",
+    "bytes": 32902157,
+    "datasets": [
+      "rel-event"
+    ],
+    "task_count": 66
+  },
+  {
+    "path": "skillmtts/standardized/rel-event/tables/users.parquet",
+    "env_paths": [
+      "datasets/rel-event/users.parquet"
+    ],
+    "sha256": "6345b7f1150097ee5447a25805d84c63c599b0d5790e7b7d7787e545d2bc0215",
+    "bytes": 483147,
+    "datasets": [
+      "rel-event"
+    ],
+    "task_count": 66
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/circuits.parquet",
+    "env_paths": [
+      "datasets/rel-f1/circuits.parquet"
+    ],
+    "sha256": "600802afd352b902ba7aa0a865f794ee5e0093abb20e185c315049a6085edbb6",
+    "bytes": 5129,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/constructor_results.parquet",
+    "env_paths": [
+      "datasets/rel-f1/constructor_results.parquet"
+    ],
+    "sha256": "3549b55535a0b5a0abc249e31caa17f6a783c9cbe3eaaa7cbb17d666c2206909",
+    "bytes": 57738,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/constructor_standings.parquet",
+    "env_paths": [
+      "datasets/rel-f1/constructor_standings.parquet"
+    ],
+    "sha256": "39d79252894e7443ad0b9fd75cfc136e83836da6246e1a785a37ad7ccf13857a",
+    "bytes": 78359,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/constructors.parquet",
+    "env_paths": [
+      "datasets/rel-f1/constructors.parquet"
+    ],
+    "sha256": "7386eec461c7ba8e66327c1b7ff1a61db9dfa34d9c5c265930cf8d6a6857737d",
+    "bytes": 3887,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/driver_standings.parquet",
+    "env_paths": [
+      "datasets/rel-f1/driver_standings.parquet"
+    ],
+    "sha256": "3a32e3e7a72f8d463eb348a25a9c92e701648e3c3512673cfe79c37966c2a512",
+    "bytes": 183476,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/drivers.parquet",
+    "env_paths": [
+      "datasets/rel-f1/drivers.parquet"
+    ],
+    "sha256": "0ba7953bd5031c4fef2675b876b55576b2a3c361e9036e1fe394719d8f65bdf7",
+    "bytes": 22495,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/qualifying.parquet",
+    "env_paths": [
+      "datasets/rel-f1/qualifying.parquet"
+    ],
+    "sha256": "103dde311d71c32a620e251a5e84451ac70e7bba7804d13b364b00f1dde00ccd",
+    "bytes": 56286,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/races.parquet",
+    "env_paths": [
+      "datasets/rel-f1/races.parquet"
+    ],
+    "sha256": "7de56e16e90dfff4f363cab0f1d2aa004ac29971281bab61c2456586a9380dcb",
+    "bytes": 14612,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-f1/tables/results.parquet",
+    "env_paths": [
+      "datasets/rel-f1/results.parquet"
+    ],
+    "sha256": "2b7beaef7e6bf4b53d108ec396782fc3b8f32ceccd0ba63cb721e84d59f0fce1",
+    "bytes": 255801,
+    "datasets": [
+      "rel-f1"
+    ],
+    "task_count": 52
+  },
+  {
+    "path": "skillmtts/standardized/rel-hm/tables/appearance.parquet",
+    "env_paths": [
+      "datasets/rel-hm/appearance.parquet"
+    ],
+    "sha256": "cb1651aa7cee0b758bd87546de5772beee0267dc0d7a2836d0d6dd70b3619f6e",
+    "bytes": 16366,
+    "datasets": [
+      "rel-hm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/rel-hm/tables/articles.parquet",
+    "env_paths": [
+      "datasets/rel-hm/articles.parquet"
+    ],
+    "sha256": "8d8490ba3867e399c451f7e020f5f62bcd2c53ca42f9a36f4db0b6c756402c7e",
+    "bytes": 2605566,
+    "datasets": [
+      "rel-hm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/rel-hm/tables/customers.parquet",
+    "env_paths": [
+      "datasets/rel-hm/customers.parquet"
+    ],
+    "sha256": "3bcf27c1a4a3995c99135dec1d2e5e0400ffbcd43a86bf61339263a772a3d519",
+    "bytes": 46552362,
+    "datasets": [
+      "rel-hm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/rel-hm/tables/merchandising.parquet",
+    "env_paths": [
+      "datasets/rel-hm/merchandising.parquet"
+    ],
+    "sha256": "a61ec0f72fcc03afbb1e11e776c0d7e27187669fc7de1248f3e06cf1ce9e175f",
+    "bytes": 7777,
+    "datasets": [
+      "rel-hm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/rel-hm/tables/product_taxonomy.parquet",
+    "env_paths": [
+      "datasets/rel-hm/product_taxonomy.parquet"
+    ],
+    "sha256": "c1f0c687848e8126920757c4f229dace2f9595ef8e7d109e1888ab9200f60894",
+    "bytes": 2494,
+    "datasets": [
+      "rel-hm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/rel-hm/tables/transactions.parquet",
+    "env_paths": [
+      "datasets/rel-hm/transactions.parquet"
+    ],
+    "sha256": "f52c5f82021c6723bbf516d6bf8cd09158c82a7fdb6c75a1b348b803bb074ebf",
+    "bytes": 66340119,
+    "datasets": [
+      "rel-hm"
+    ],
+    "task_count": 29
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/answers.parquet",
+    "env_paths": [
+      "datasets/rel-stack/answers.parquet"
+    ],
+    "sha256": "08d71c85443d97777b3605195b480df6dfb67619749eb3984e07f41cc62e2113",
+    "bytes": 96608739,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/badges.parquet",
+    "env_paths": [
+      "datasets/rel-stack/badges.parquet"
+    ],
+    "sha256": "cbbd2e8235539479aee20ef1e62166fa3329dd0df39e43c5e09615d25a022df9",
+    "bytes": 5369620,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/comments.parquet",
+    "env_paths": [
+      "datasets/rel-stack/comments.parquet"
+    ],
+    "sha256": "db96176110584687dfef75210e2135b41b6318d59cd145ed60b799c4e97685a9",
+    "bytes": 77266891,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/other_posts.parquet",
+    "env_paths": [
+      "datasets/rel-stack/other_posts.parquet"
+    ],
+    "sha256": "15752d6a4e04a55f44df10ebe0900fa7bbaf8bd70c13bb963cb94911d7b80774",
+    "bytes": 345954,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/post_history.parquet",
+    "env_paths": [
+      "datasets/rel-stack/post_history.parquet"
+    ],
+    "sha256": "0466a772c278c4c5dd11ef3cf1b275bb423ede3c53485a3a99f2bf6f386589c7",
+    "bytes": 278695071,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/post_links.parquet",
+    "env_paths": [
+      "datasets/rel-stack/post_links.parquet"
+    ],
+    "sha256": "b9703a346f81814e5d70ee468ef6ac525d096b2309bedba1ca3d970f2d778492",
+    "bytes": 1206935,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/questions.parquet",
+    "env_paths": [
+      "datasets/rel-stack/questions.parquet"
+    ],
+    "sha256": "63f030f991cca9dba110ae4cb84e094e25d4ac553a245a5587e7a24aeb756584",
+    "bytes": 95252490,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/users.parquet",
+    "env_paths": [
+      "datasets/rel-stack/users.parquet"
+    ],
+    "sha256": "ebb49f12db95323eca6b8f6746c7c4b5667620b21d5a91b955d08fa158b3cdd5",
+    "bytes": 12198073,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  },
+  {
+    "path": "skillmtts/standardized/rel-stack/tables/votes.parquet",
+    "env_paths": [
+      "datasets/rel-stack/votes.parquet"
+    ],
+    "sha256": "8ea0011529d1433d1404694ac69d1ee7aef31a5ac4e9564508ef639564a0d39c",
+    "bytes": 6127458,
+    "datasets": [
+      "rel-stack"
+    ],
+    "task_count": 51
+  }
+]

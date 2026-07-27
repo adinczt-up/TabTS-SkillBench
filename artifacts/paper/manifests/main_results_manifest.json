@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "TabTS-SkillBench",
+  "task_count": 251,
+  "configuration_count": 9,
+  "task_manifest": "../../../benchmark/manifests/task_set_251.json",
+  "task_set_id": "tabts-skillbench-251-v1",
+  "runtime_versions": {
+    "benchmark_eval": "0.1.0",
+    "nanobot": "0.1.5.post3",
+    "codex_cli": "0.145.0",
+    "claude_code": "2.1.219"
+  },
+  "configurations": [
+    {
+      "id": "codex_gpt_5_4",
+      "harness": "Codex",
+      "model": "GPT-5.4-mini",
+      "result_model": "GPT-5.4"
+    },
+    {
+      "id": "codex_gpt_5_6",
+      "harness": "Codex",
+      "model": "GPT-5.6-Luna",
+      "result_model": "GPT-5.6"
+    },
+    {
+      "id": "codex_deepseek_v4_flash",
+      "harness": "Codex",
+      "model": "DeepSeek-V4-Flash",
+      "result_model": "DS-V4-F"
+    },
+    {
+      "id": "codex_deepseek_v4_pro",
+      "harness": "Codex",
+      "model": "DeepSeek-V4-Pro",
+      "result_model": "DS-V4-P"
+    },
+    {
+      "id": "claude_code_deepseek_v4_flash",
+      "harness": "Claude Code",
+      "model": "DeepSeek-V4-Flash",
+      "result_model": "DS-V4-F"
+    },
+    {
+      "id": "claude_code_deepseek_v4_pro",
+      "harness": "Claude Code",
+      "model": "DeepSeek-V4-Pro",
+      "result_model": "DS-V4-P"
+    },
+    {
+      "id": "nanobot_gpt_5_4",
+      "harness": "Nanobot",
+      "model": "GPT-5.4-mini",
+      "result_model": "GPT-5.4"
+    },
+    {
+      "id": "nanobot_deepseek_v4_flash",
+      "harness": "Nanobot",
+      "model": "DeepSeek-V4-Flash",
+      "result_model": "DS-V4-F"
+    },
+    {
+      "id": "nanobot_deepseek_v4_pro",
+      "harness": "Nanobot",
+      "model": "DeepSeek-V4-Pro",
+      "result_model": "DS-V4-P"
+    }
+  ],
+  "conditions": [
+    "baseline",
+    "self_route",
+    "annotated_preload"
+  ],
+  "repeats": 3,
+  "execution_count": 20331,
+  "result_level": "authoritative_aggregate",
+  "result_files": {
+    "json": "../results/main_aggregate_results.json",
+    "csv": "../results/main_aggregate_results.csv"
+  },
+  "paper_claims": {
+    "macro_avg_at_3": {
+      "baseline": 38.4,
+      "self_route": 57.1,
+      "annotated_preload": 56.5
+    },
+    "macro_calls": {
+      "baseline": 8.8,
+      "self_route": 20.2,
+      "annotated_preload": 22.4
+    },
+    "cross_configuration_std": {
+      "baseline": 11.3,
+      "self_route": 7.7
+    },
+    "best_avg_at_3": 67.3,
+    "pearson_gain_vs_baseline": {
+      "r": -0.76,
+      "p": 0.017
+    },
+    "temporal_macro": {
+      "tea_baseline": 44.3,
+      "tea_preload": 63.1,
+      "td_f1_baseline": 25.5,
+      "td_f1_preload": 59.5,
+      "tcc_baseline": 54.0,
+      "tcc_preload": 69.0
+    }
+  },
+  "reproduced_outputs": [
+    "table2.csv",
+    "table2.tex",
+    "figure4.svg",
+    "figure5.svg",
+    "figure7.svg",
+    "figure8.svg"
+  ]
+}

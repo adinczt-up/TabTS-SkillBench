@@ -1,0 +1,15 @@
+{
+  "task_count": 251,
+  "skill_count": 47,
+  "asset_count": 39,
+  "asset_bytes": 999546475,
+  "source_counts": {
+    "azure-pdm": 29,
+    "bdg2": 24,
+    "rel-event": 66,
+    "rel-f1": 52,
+    "rel-hm": 29,
+    "rel-stack": 51
+  },
+  "family_count": 30
+}

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sensitive security report
+    url: https://github.com/adinczt-up/TabTS-SkillBench/security/advisories/new
+    about: Privately report sandbox escapes, Gold leaks, secret exposure, or code execution.

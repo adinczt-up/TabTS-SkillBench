@@ -1,0 +1,4 @@
+interface:
+  display_name: "Role-Aware Field Binding"
+  short_description: "Bind competing columns to explicit analytical roles."
+  default_prompt: "Use -role-aware-field-binding to resolve competing fields by semantic role and evidence."

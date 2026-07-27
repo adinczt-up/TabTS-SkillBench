@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a reproducible benchmark, runner, scorer, or packaging problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report secrets, sandbox escapes, Gold leaks, or private data here.
+        Follow SECURITY.md for sensitive reports.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Release validation
+        - Runner or sandbox
+        - Adapter
+        - Scoring or report
+        - Task, contract, or Gold
+        - Skill
+        - Packaging or installation
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: State what happened and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include commands and sanitized logs. Remove API keys and private paths.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, model harness, and sandbox mode.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed credentials, private data, and licensed dataset contents.
+          required: true
+        - label: This report does not describe a sandbox escape or Gold leak.
+          required: true

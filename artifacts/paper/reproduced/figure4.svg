@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="650" viewBox="0 0 1240 650">
+<style>
+text{font-family:Helvetica,Arial,sans-serif;fill:#17212B}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:13px;fill:#5E6A75}
+.axis{font-size:12px;fill:#5E6A75}
+.label{font-size:12px}
+.small{font-size:10px}
+</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="75.00" y="34.00" class="title" text-anchor="start">Avg@3 across nine configurations</text>
+<text x="75.00" y="57.00" class="subtitle" text-anchor="start">Bars: Skill condition; line: Self-Route gain vs. Baseline</text>
+<line x1="75.00" y1="500.00" x2="1170.00" y2="500.00" stroke="#D9DEE5" stroke-width="1"/>
+<text x="65.00" y="504.00" class="axis" text-anchor="end">0</text>
+<line x1="75.00" y1="417.00" x2="1170.00" y2="417.00" stroke="#D9DEE5" stroke-width="1"/>
+<text x="65.00" y="421.00" class="axis" text-anchor="end">15</text>
+<line x1="75.00" y1="334.00" x2="1170.00" y2="334.00" stroke="#D9DEE5" stroke-width="1"/>
+<text x="65.00" y="338.00" class="axis" text-anchor="end">30</text>
+<line x1="75.00" y1="251.00" x2="1170.00" y2="251.00" stroke="#D9DEE5" stroke-width="1"/>
+<text x="65.00" y="255.00" class="axis" text-anchor="end">45</text>
+<line x1="75.00" y1="168.00" x2="1170.00" y2="168.00" stroke="#D9DEE5" stroke-width="1"/>
+<text x="65.00" y="172.00" class="axis" text-anchor="end">60</text>
+<line x1="75.00" y1="85.00" x2="1170.00" y2="85.00" stroke="#D9DEE5" stroke-width="1"/>
+<text x="65.00" y="89.00" class="axis" text-anchor="end">75</text>
+<rect x="93.83" y="222.23" width="26.00" height="277.77" rx="2.00" fill="#A8B2BF"/>
+<rect x="122.83" y="138.67" width="26.00" height="361.33" rx="2.00" fill="#3978B8"/>
+<rect x="151.83" y="138.67" width="26.00" height="361.33" rx="2.00" fill="#E4764F"/>
+<text x="135.83" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 135.83 518.00)">Codex GPT-5.4</text>
+<rect x="215.50" y="162.47" width="26.00" height="337.53" rx="2.00" fill="#A8B2BF"/>
+<rect x="244.50" y="127.61" width="26.00" height="372.39" rx="2.00" fill="#3978B8"/>
+<rect x="273.50" y="151.95" width="26.00" height="348.05" rx="2.00" fill="#E4764F"/>
+<text x="257.50" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 257.50 518.00)">Codex GPT-5.6</text>
+<rect x="337.17" y="367.75" width="26.00" height="132.25" rx="2.00" fill="#A8B2BF"/>
+<rect x="366.17" y="257.64" width="26.00" height="242.36" rx="2.00" fill="#3978B8"/>
+<rect x="395.17" y="248.79" width="26.00" height="251.21" rx="2.00" fill="#E4764F"/>
+<text x="379.17" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 379.17 518.00)">Codex DS-V4-F</text>
+<rect x="458.83" y="266.49" width="26.00" height="233.51" rx="2.00" fill="#A8B2BF"/>
+<rect x="487.83" y="182.39" width="26.00" height="317.61" rx="2.00" fill="#3978B8"/>
+<rect x="516.83" y="195.67" width="26.00" height="304.33" rx="2.00" fill="#E4764F"/>
+<text x="500.83" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 500.83 518.00)">Codex DS-V4-P</text>
+<rect x="580.50" y="352.26" width="26.00" height="147.74" rx="2.00" fill="#A8B2BF"/>
+<rect x="609.50" y="255.43" width="26.00" height="244.57" rx="2.00" fill="#3978B8"/>
+<rect x="638.50" y="266.49" width="26.00" height="233.51" rx="2.00" fill="#E4764F"/>
+<text x="622.50" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 622.50 518.00)">Claude DS-V4-F</text>
+<rect x="702.17" y="288.63" width="26.00" height="211.37" rx="2.00" fill="#A8B2BF"/>
+<rect x="731.17" y="175.75" width="26.00" height="324.25" rx="2.00" fill="#3978B8"/>
+<rect x="760.17" y="162.47" width="26.00" height="337.53" rx="2.00" fill="#E4764F"/>
+<text x="744.17" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 744.17 518.00)">Claude DS-V4-P</text>
+<rect x="823.83" y="341.19" width="26.00" height="158.81" rx="2.00" fill="#A8B2BF"/>
+<rect x="852.83" y="173.53" width="26.00" height="326.47" rx="2.00" fill="#3978B8"/>
+<rect x="881.83" y="171.32" width="26.00" height="328.68" rx="2.00" fill="#E4764F"/>
+<text x="865.83" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 865.83 518.00)">Nanobot GPT-5.4</text>
+<rect x="945.50" y="320.72" width="26.00" height="179.28" rx="2.00" fill="#A8B2BF"/>
+<rect x="974.50" y="180.17" width="26.00" height="319.83" rx="2.00" fill="#3978B8"/>
+<rect x="1003.50" y="173.53" width="26.00" height="326.47" rx="2.00" fill="#E4764F"/>
+<text x="987.50" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 987.50 518.00)">Nanobot DS-V4-F</text>
+<rect x="1067.17" y="264.28" width="26.00" height="235.72" rx="2.00" fill="#A8B2BF"/>
+<rect x="1096.17" y="166.89" width="26.00" height="333.11" rx="2.00" fill="#3978B8"/>
+<rect x="1125.17" y="177.96" width="26.00" height="322.04" rx="2.00" fill="#E4764F"/>
+<text x="1109.17" y="518.00" class="small" text-anchor="end" transform="rotate(-45.0 1109.17 518.00)">Nanobot DS-V4-P</text>
+<polyline points="135.83,320.96 257.50,425.30 379.17,264.04 500.83,319.77 622.50,292.50 744.17,258.11 865.83,140.73 987.50,198.83 1109.17,291.31" fill="none" stroke="#17212B" stroke-width="2"/>
+<circle cx="135.83" cy="320.96" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="135.83" y="312.96" class="small" text-anchor="middle">+15.1</text>
+<circle cx="257.50" cy="425.30" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="257.50" y="417.30" class="small" text-anchor="middle">+6.3</text>
+<circle cx="379.17" cy="264.04" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="379.17" y="256.04" class="small" text-anchor="middle">+19.9</text>
+<circle cx="500.83" cy="319.77" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="500.83" y="311.77" class="small" text-anchor="middle">+15.2</text>
+<circle cx="622.50" cy="292.50" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="622.50" y="284.50" class="small" text-anchor="middle">+17.5</text>
+<circle cx="744.17" cy="258.11" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="744.17" y="250.11" class="small" text-anchor="middle">+20.4</text>
+<circle cx="865.83" cy="140.73" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="865.83" y="132.73" class="small" text-anchor="middle">+30.3</text>
+<circle cx="987.50" cy="198.83" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="987.50" y="190.83" class="small" text-anchor="middle">+25.4</text>
+<circle cx="1109.17" cy="291.31" r="4.00" fill="white" stroke="#17212B" stroke-width="1.2"/>
+<text x="1109.17" y="283.31" class="small" text-anchor="middle">+17.6</text>
+<rect x="75.00" y="620.00" width="14.00" height="14.00" rx="2.00" fill="#A8B2BF"/>
+<text x="95.00" y="632.00" class="axis" text-anchor="start">Baseline</text>
+<rect x="285.00" y="620.00" width="14.00" height="14.00" rx="2.00" fill="#3978B8"/>
+<text x="305.00" y="632.00" class="axis" text-anchor="start">Self-Route</text>
+<rect x="495.00" y="620.00" width="14.00" height="14.00" rx="2.00" fill="#E4764F"/>
+<text x="515.00" y="632.00" class="axis" text-anchor="start">Annotated-Skill Preload</text>
+<text x="20.00" y="292.50" class="axis" text-anchor="start" transform="rotate(-90.0 20.00 292.50)">Avg@3 (%)</text>
+<text x="1225.00" y="292.50" class="axis" text-anchor="middle" transform="rotate(90.0 1225.00 292.50)">Self-Route gain (pp)</text>
+</svg>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Directional Delta Validation"
+  short_description: "Validate signed changes with explicit orientation."
+  default_prompt: "Use -directional-delta-validation to prevent sign and direction mistakes in changes."

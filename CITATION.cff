@@ -1,0 +1,7 @@
+﻿cff-version: 1.2.0
+message: "If you use this benchmark, please cite it."
+title: "TabTS-SkillBench"
+version: 0.1.0
+authors:
+  - name: "TabTS-SkillBench Authors"
+repository-code: "https://github.com/adinczt-up/TabTS-SkillBench"

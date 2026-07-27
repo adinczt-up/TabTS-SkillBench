@@ -1,0 +1,713 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "TabTS-SkillBench",
+  "condition_order": [
+    "baseline",
+    "self_route",
+    "annotated_preload"
+  ],
+  "units": {
+    "avg_at_3": "percent",
+    "delta_percentage_points": "percentage_points",
+    "tea": "percent",
+    "td_f1": "percent",
+    "tcc": "percent",
+    "rea": "percent",
+    "dar": "percent",
+    "ske_f1": "percent",
+    "svr": "percent",
+    "calls": "calls_per_task",
+    "calls_per_success": "calls_per_strict_success"
+  },
+  "rows": [
+    {
+      "configuration_id": "codex_gpt_5_4",
+      "harness": "Codex",
+      "model": "GPT-5.4",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 50.19920318725100,
+          "self_route": 65.3386454183266900,
+          "annotated_preload": 65.3386454183266900
+        },
+        "delta_percentage_points": {
+          "self_route": 15.1394422310756900,
+          "annotated_preload": 15.1394422310756900
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 42.9361917409726200,
+          "self_route": 52.3054606968949700,
+          "annotated_preload": 64.6374818187567100
+        },
+        "td_f1": {
+          "baseline": 23.55660936573799600,
+          "self_route": 42.286109464532700,
+          "annotated_preload": 62.1517486662714900
+        },
+        "tcc": {
+          "baseline": 54.3452744842576400,
+          "self_route": 60.8859971474700300,
+          "annotated_preload": 71.1780410439735900
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 73.6088811586819500,
+          "self_route": 76.4006032332725600,
+          "annotated_preload": 73.8904300657288600
+        },
+        "dar": {
+          "baseline": 46.6112730806608300,
+          "self_route": 50.1243926141885300,
+          "annotated_preload": 49.11856171039844500
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 9.37583001328021200,
+          "annotated_preload": 64.2098273572377100
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 82.1428571428571400,
+          "annotated_preload": 69.6547144754316100
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 8.079681274900398,
+          "self_route": 13.143426294820717,
+          "annotated_preload": 22.788844621513945
+        },
+        "calls_per_success": {
+          "baseline": 16.095238095238095,
+          "self_route": 20.115853658536587,
+          "annotated_preload": 34.87804878048781
+        }
+      }
+    },
+    {
+      "configuration_id": "codex_gpt_5_6",
+      "harness": "Codex",
+      "model": "GPT-5.6",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 60.9561752988047800,
+          "self_route": 67.3306772908366500,
+          "annotated_preload": 62.9482071713147400
+        },
+        "delta_percentage_points": {
+          "self_route": 6.3745019920318700,
+          "annotated_preload": 1.9920318725099600
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 39.16540188452538600,
+          "self_route": 54.2083254284449500,
+          "annotated_preload": 57.9844115601087700
+        },
+        "td_f1": {
+          "baseline": 24.868603042876900,
+          "self_route": 54.250148192056900,
+          "annotated_preload": 56.3623789764868600
+        },
+        "tcc": {
+          "baseline": 49.14449363028729500,
+          "self_route": 60.9437391692612400,
+          "annotated_preload": 60.7108865624216100
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 75.4314152720527200,
+          "self_route": 74.2580998756297500,
+          "annotated_preload": 47.6761087518059600
+        },
+        "dar": {
+          "baseline": 92.7781030444964800,
+          "self_route": 94.4977991196478500,
+          "annotated_preload": 89.5181405895691600
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 24.96110794915575900,
+          "annotated_preload": 64.0770252324037100
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 65.3229717813051200,
+          "annotated_preload": 87.9150066401062400
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 5.0239043824701195,
+          "self_route": 21.816733067729082,
+          "annotated_preload": 11.649402390438247
+        },
+        "calls_per_success": {
+          "baseline": 8.241830065359476,
+          "self_route": 32.40236686390533,
+          "annotated_preload": 18.50632911392405
+        }
+      }
+    },
+    {
+      "configuration_id": "codex_deepseek_v4_flash",
+      "harness": "Codex",
+      "model": "DS-V4-F",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 23.90438247011952300,
+          "self_route": 43.82470119521912300,
+          "annotated_preload": 45.4183266932270900
+        },
+        "delta_percentage_points": {
+          "self_route": 19.92031872509960000,
+          "annotated_preload": 21.51394422310756700
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 48.9274647441978100,
+          "self_route": 61.5280939733130900,
+          "annotated_preload": 66.7916429520015200
+        },
+        "td_f1": {
+          "baseline": 26.2102351313969600,
+          "self_route": 51.2467891721003700,
+          "annotated_preload": 60.7804781663702800
+        },
+        "tcc": {
+          "baseline": 59.289372186529800,
+          "self_route": 67.7568918590837100,
+          "annotated_preload": 72.7865780591291700
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 77.776426760490500,
+          "self_route": 79.4871713796016600,
+          "annotated_preload": 80.8268174204429200
+        },
+        "dar": {
+          "baseline": 72.0068027210884400,
+          "self_route": 75.1146744412050500,
+          "annotated_preload": 76.4110787172011600
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 29.84063745019920300,
+          "annotated_preload": 98.4063745019920300
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 97.6190476190476200,
+          "annotated_preload": 95.0248756218905500
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 8.649402390438247,
+          "self_route": 23.02788844621514,
+          "annotated_preload": 18.681274900398407
+        },
+        "calls_per_success": {
+          "baseline": 36.18333333333333,
+          "self_route": 52.54545454545455,
+          "annotated_preload": 41.131578947368425
+        }
+      }
+    },
+    {
+      "configuration_id": "codex_deepseek_v4_pro",
+      "harness": "Codex",
+      "model": "DS-V4-P",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 42.23107569721115700,
+          "self_route": 57.3705179282868600,
+          "annotated_preload": 54.980079681274900
+        },
+        "delta_percentage_points": {
+          "self_route": 15.13944223107570300,
+          "annotated_preload": 12.74900398406374300
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 46.07000569151963300,
+          "self_route": 58.3509612344273700,
+          "annotated_preload": 64.7445930563460300
+        },
+        "td_f1": {
+          "baseline": 26.1351511558980400,
+          "self_route": 54.6255680695514700,
+          "annotated_preload": 61.1361391029440800
+        },
+        "tcc": {
+          "baseline": 55.3607863059715800,
+          "self_route": 64.5500540060552700,
+          "annotated_preload": 71.3524101709687500
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 76.8625472211129500,
+          "self_route": 76.686644475489100,
+          "annotated_preload": 76.4668812079170600
+        },
+        "dar": {
+          "baseline": 64.0388726919339100,
+          "self_route": 54.789115646258500,
+          "annotated_preload": 68.8406219630709500
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 45.6308100929614900,
+          "annotated_preload": 97.3439575033200600
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 95.5275229357798200,
+          "annotated_preload": 100.0
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 10.0597609561753,
+          "self_route": 22.338645418326692,
+          "annotated_preload": 17.175298804780876
+        },
+        "calls_per_success": {
+          "baseline": 23.820754716981135,
+          "self_route": 38.93749999999999,
+          "annotated_preload": 31.23913043478261
+        }
+      }
+    },
+    {
+      "configuration_id": "claude_code_deepseek_v4_flash",
+      "harness": "Claude Code",
+      "model": "DS-V4-F",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 26.69322709163346500,
+          "self_route": 44.22310756972111500,
+          "annotated_preload": 42.23107569721115700
+        },
+        "delta_percentage_points": {
+          "self_route": 17.52988047808765000,
+          "annotated_preload": 15.53784860557769200
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 48.67039777398342600,
+          "self_route": 56.9672895718712500,
+          "annotated_preload": 67.3883039271485500
+        },
+        "td_f1": {
+          "baseline": 27.47678324441809600,
+          "self_route": 41.77830468286900,
+          "annotated_preload": 60.5058288875716200
+        },
+        "tcc": {
+          "baseline": 58.707979962067400,
+          "self_route": 64.339487751233900,
+          "annotated_preload": 73.4497185729201300
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 77.8915720549186700,
+          "self_route": 78.8218506445598100,
+          "annotated_preload": 75.9156948997586500
+        },
+        "dar": {
+          "baseline": 61.8571428571428700,
+          "self_route": 68.1924198250728900,
+          "annotated_preload": 60.7367291178766500
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 28.45949535192563400,
+          "annotated_preload": 99.2031872509960200
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 83.5054773082942200,
+          "annotated_preload": 84.860557768924300
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 10.56175298804781,
+          "self_route": 26.171314741035857,
+          "annotated_preload": 20.0597609561753
+        },
+        "calls_per_success": {
+          "baseline": 39.56716417910448,
+          "self_route": 59.18018018018018,
+          "annotated_preload": 47.5
+        }
+      }
+    },
+    {
+      "configuration_id": "claude_code_deepseek_v4_pro",
+      "harness": "Claude Code",
+      "model": "DS-V4-P",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 38.24701195219123400,
+          "self_route": 58.5657370517928300,
+          "annotated_preload": 60.9561752988047800
+        },
+        "delta_percentage_points": {
+          "self_route": 20.31872509960159600,
+          "annotated_preload": 22.70916334661354600
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 48.6079491557579200,
+          "self_route": 56.9706886738759200,
+          "annotated_preload": 65.2392019224688500
+        },
+        "td_f1": {
+          "baseline": 29.4605809128630700,
+          "self_route": 43.95771586642955300,
+          "annotated_preload": 61.6083777909504100
+        },
+        "tcc": {
+          "baseline": 57.946699960442800,
+          "self_route": 63.7482739926141700,
+          "annotated_preload": 71.7387718144183500
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 77.1117380479930300,
+          "self_route": 76.058071336955800,
+          "annotated_preload": 76.5217982548659800
+        },
+        "dar": {
+          "baseline": 63.8833819241982500,
+          "self_route": 56.0719144800777400,
+          "annotated_preload": 61.1127308066083600
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 33.7184594953519200,
+          "annotated_preload": 99.3359893758300100
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 81.0019841269841300,
+          "annotated_preload": 93.8247011952191300
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 10.860557768924302,
+          "self_route": 21.199203187250998,
+          "annotated_preload": 17.90836653386454
+        },
+        "calls_per_success": {
+          "baseline": 28.395833333333332,
+          "self_route": 36.197278911564624,
+          "annotated_preload": 29.37908496732026
+        }
+      }
+    },
+    {
+      "configuration_id": "nanobot_gpt_5_4",
+      "harness": "Nanobot",
+      "model": "GPT-5.4",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 28.6852589641434300,
+          "self_route": 58.9641434262948200,
+          "annotated_preload": 59.3625498007968200
+        },
+        "delta_percentage_points": {
+          "self_route": 30.2788844621513900,
+          "annotated_preload": 30.6772908366533900
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 28.71387466008979400,
+          "self_route": 43.3176816543350400,
+          "annotated_preload": 54.8043540125213400
+        },
+        "td_f1": {
+          "baseline": 13.92807745504840700,
+          "self_route": 23.3471645919778700,
+          "annotated_preload": 52.082592373048800
+        },
+        "tcc": {
+          "baseline": 37.5198400405836900,
+          "self_route": 54.5130027889917200,
+          "annotated_preload": 60.1735537253249700
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 55.3012672733788200,
+          "self_route": 72.8041679436101800,
+          "annotated_preload": 66.4299983622692700
+        },
+        "dar": {
+          "baseline": 40.3314453534717900,
+          "self_route": 35.4243873281530200,
+          "annotated_preload": 66.6424162257495600
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 0.0,
+          "annotated_preload": 56.3745019920318800
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 85.7142857142857100,
+          "annotated_preload": 50.0709219858156100
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 7.904382470119522,
+          "self_route": 10.103585657370518,
+          "annotated_preload": 25.48605577689243
+        },
+        "calls_per_success": {
+          "baseline": 27.555555555555554,
+          "self_route": 17.135135135135133,
+          "annotated_preload": 42.93288590604027
+        }
+      }
+    },
+    {
+      "configuration_id": "nanobot_deepseek_v4_flash",
+      "harness": "Nanobot",
+      "model": "DS-V4-F",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 32.4037184594953500,
+          "self_route": 57.7689243027888500,
+          "annotated_preload": 58.9641434262948200
+        },
+        "delta_percentage_points": {
+          "self_route": 25.3652058432935000,
+          "annotated_preload": 26.5604249667994700
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 47.03598305191930600,
+          "self_route": 55.603222032504900,
+          "annotated_preload": 63.728498703598300
+        },
+        "td_f1": {
+          "baseline": 27.9628531910689600,
+          "self_route": 48.5128103800302900,
+          "annotated_preload": 60.4952907857472100
+        },
+        "tcc": {
+          "baseline": 57.2231751571033300,
+          "self_route": 64.0612326685540500,
+          "annotated_preload": 70.4218791370726600
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 71.9172266914630900,
+          "self_route": 72.5005536492920200,
+          "annotated_preload": 74.7555381021516400
+        },
+        "dar": {
+          "baseline": 39.3586998832230500,
+          "self_route": 35.10009718172983400,
+          "annotated_preload": 71.5854457326259300
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 37.3085436033643200,
+          "annotated_preload": 64.2983621071270400
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 68.595890410958900,
+          "annotated_preload": 74.9889036839769200
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 7.922974767596282,
+          "self_route": 21.378486055776893,
+          "annotated_preload": 32.755644090305445
+        },
+        "calls_per_success": {
+          "baseline": 24.45081967213115,
+          "self_route": 37.00689655172414,
+          "annotated_preload": 55.5518018018018
+        }
+      }
+    },
+    {
+      "configuration_id": "nanobot_deepseek_v4_pro",
+      "harness": "Nanobot",
+      "model": "DS-V4-P",
+      "outcome": {
+        "avg_at_3": {
+          "baseline": 42.6294820717131500,
+          "self_route": 60.159362549800800,
+          "annotated_preload": 58.1673306772908400
+        },
+        "delta_percentage_points": {
+          "self_route": 17.5298804780876500,
+          "annotated_preload": 15.5378486055776900
+        }
+      },
+      "temporal_analysis": {
+        "tea": {
+          "baseline": 48.5214696768481600,
+          "self_route": 56.37165623221400,
+          "annotated_preload": 62.6248972364510200
+        },
+        "td_f1": {
+          "baseline": 30.0573009286702200,
+          "self_route": 51.4068365935585900,
+          "annotated_preload": 60.1758545741948200
+        },
+        "tcc": {
+          "baseline": 56.8854106095180400,
+          "self_route": 62.7913636469721600,
+          "annotated_preload": 69.0022352396971500
+        }
+      },
+      "multi_table": {
+        "rea": {
+          "baseline": 77.6386229971887300,
+          "self_route": 78.0495452607006400,
+          "annotated_preload": 76.3354396820532300
+        },
+        "dar": {
+          "baseline": 64.5004859086491700,
+          "self_route": 59.5442176870748300,
+          "annotated_preload": 96.4631495751827700
+        }
+      },
+      "skill": {
+        "ske_f1": {
+          "baseline": null,
+          "self_route": 34.18326693227091700,
+          "annotated_preload": 64.5418326693227100
+        },
+        "svr": {
+          "baseline": null,
+          "self_route": 59.4800,
+          "annotated_preload": 79.747675962815400
+        }
+      },
+      "cost": {
+        "calls": {
+          "baseline": 10.278884462151394,
+          "self_route": 23.051792828685258,
+          "annotated_preload": 35.33466135458168
+        },
+        "calls_per_success": {
+          "baseline": 24.11214953271028,
+          "self_route": 38.317880794701985,
+          "annotated_preload": 60.74657534246575
+        }
+      }
+    }
+  ],
+  "macro_average": {
+    "harness": "Macro Average",
+    "model": null,
+    "outcome": {
+      "avg_at_3": {
+        "baseline": 38.43883724361812,
+        "self_route": 57.06064630367419,
+        "annotated_preload": 56.48517042939354
+      },
+      "delta_percentage_points": {
+        "self_route": 18.621809060056073,
+        "annotated_preload": 18.046333185775417
+      }
+    },
+    "temporal_analysis": {
+      "tea": {
+        "baseline": 44.294304264423786,
+        "self_route": 55.069264388653494,
+        "annotated_preload": 63.10482057660012
+      },
+      "td_f1": {
+        "baseline": 25.51735493644207,
+        "self_route": 45.7123830014563,
+        "annotated_preload": 59.477632147065066
+      },
+      "tcc": {
+        "baseline": 54.04700359297351,
+        "self_route": 62.62111589224847,
+        "annotated_preload": 68.9793415917696
+      }
+    },
+    "multi_table": {
+      "rea": {
+        "baseline": 73.72663305303116,
+        "self_route": 76.11852308879017,
+        "annotated_preload": 72.09096741633262
+      },
+      "dar": {
+        "baseline": 60.59624527387386,
+        "self_route": 58.762113147045355,
+        "annotated_preload": 71.15876382647589
+      }
+    },
+    "skill": {
+      "ske_f1": {
+        "baseline": null,
+        "self_route": 27.053127876501048,
+        "annotated_preload": 78.6434508878068
+      },
+      "svr": {
+        "baseline": null,
+        "self_route": 79.87889300439029,
+        "annotated_preload": 81.7874841482422
+      }
+    },
+    "cost": {
+      "calls": {
+        "baseline": 8.815700162313709,
+        "self_route": 20.247897299690127,
+        "annotated_preload": 22.426589936550098
+      },
+      "calls_per_success": {
+        "baseline": 25.380297609305202,
+        "self_route": 36.87094962680028,
+        "annotated_preload": 40.20727058824344
+      }
+    }
+  }
+}

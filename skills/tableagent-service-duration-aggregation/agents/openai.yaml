@@ -1,0 +1,4 @@
+interface:
+  display_name: "TableAgent Service Duration Aggregation"
+  short_description: "Compute and validate service durations from tabular intervals."
+  default_prompt: "Compute service or tenure durations from table date intervals with explicit boundary conventions and structured evidence."

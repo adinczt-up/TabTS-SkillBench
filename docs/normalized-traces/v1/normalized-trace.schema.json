@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/adinczt-up/TabTS-SkillBench/blob/main/docs/normalized-traces/v1/normalized-trace.schema.json",
+  "title": "TabTS-SkillBench normalized trace v1",
+  "description": "The flattened machine-readable representation emitted by benchmark_eval.schema.TraceRecord.to_dict().",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "framework",
+    "model",
+    "condition",
+    "repeat",
+    "run_id",
+    "run_root",
+    "status",
+    "failure_reason",
+    "final_answer",
+    "answer_source",
+    "pre_repair_final_answer",
+    "tool_calls",
+    "commands",
+    "tables_read",
+    "join_operations",
+    "temporal_operations",
+    "temporal_operation_sequence",
+    "temporal_granularities",
+    "temporal_parameters",
+    "timestamps_used",
+    "skill_usage",
+    "prompt_tokens",
+    "completion_tokens",
+    "cached_tokens",
+    "duration_seconds",
+    "final_answer_repair_attempt_count",
+    "final_answer_repair_success_count",
+    "whole_task_attempt_count",
+    "infrastructure_retry_count",
+    "raw_result_path"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "framework": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "repeat": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "run_root": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "completed",
+        "failed",
+        "infrastructure_error",
+        "empty_output",
+        "missing_run"
+      ]
+    },
+    "failure_reason": {
+      "type": "string"
+    },
+    "final_answer": {
+      "type": "string"
+    },
+    "answer_source": {
+      "type": "string"
+    },
+    "pre_repair_final_answer": {
+      "type": "string"
+    },
+    "tool_calls": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tables_read": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "join_operations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "temporal_operations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temporal_operation_sequence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temporal_granularities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "temporal_parameters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timestamps_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skill_usage": {
+      "type": "object"
+    },
+    "prompt_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "completion_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "cached_tokens": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "duration_seconds": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "final_answer_repair_attempt_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "final_answer_repair_success_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "whole_task_attempt_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "infrastructure_retry_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "raw_result_path": {
+      "type": "string"
+    }
+  }
+}

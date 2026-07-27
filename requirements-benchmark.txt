@@ -1,0 +1,4 @@
+# Compatibility entrypoint for existing workflows.
+# New installations should use:
+#   python -m pip install -e ".[benchmark,runner]"
+-e .[benchmark,runner]

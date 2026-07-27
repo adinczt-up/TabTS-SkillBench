@@ -1,0 +1,4 @@
+interface:
+  display_name: "TableAgent Waveform Amplitude Comparison"
+  short_description: "Compare waveform amplitudes without confusing level or offset."
+  default_prompt: "Compare waveform amplitudes from tabular time-series data using robust segment ranges and return structured evidence."

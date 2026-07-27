@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="650" viewBox="0 0 1420 650">
+<style>
+text{font-family:Helvetica,Arial,sans-serif;fill:#17212B}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:13px;fill:#5E6A75}
+.axis{font-size:12px;fill:#5E6A75}
+.label{font-size:12px}
+.small{font-size:10px}
+</style>
+<rect width="100%" height="100%" fill="white"/>
+<text x="185.00" y="34.00" class="title" text-anchor="start">Per-configuration metric changes</text>
+<text x="185.00" y="57.00" class="subtitle" text-anchor="start">Percentage-point differences relative to Baseline</text>
+<text x="419.00" y="83.00" class="label" text-anchor="middle">Self-Route minus Baseline</text>
+<text x="224.00" y="95.00" class="axis" text-anchor="middle">Avg@3</text>
+<text x="302.00" y="95.00" class="axis" text-anchor="middle">TEA</text>
+<text x="380.00" y="95.00" class="axis" text-anchor="middle">TD-F1</text>
+<text x="458.00" y="95.00" class="axis" text-anchor="middle">TCC</text>
+<text x="536.00" y="95.00" class="axis" text-anchor="middle">REA</text>
+<text x="614.00" y="95.00" class="axis" text-anchor="middle">DAR</text>
+<text x="175.00" y="131.50" class="axis" text-anchor="end">Codex GPT-5.4</text>
+<rect x="185.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#DDA9AE" stroke="white"/>
+<text x="224.00" y="131.50" class="small" text-anchor="middle">+15.1</text>
+<rect x="263.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#E7C6C9" stroke="white"/>
+<text x="302.00" y="131.50" class="small" text-anchor="middle">+9.4</text>
+<rect x="341.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#D7969C" stroke="white"/>
+<text x="380.00" y="131.50" class="small" text-anchor="middle">+18.7</text>
+<rect x="419.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#ECD5D7" stroke="white"/>
+<text x="458.00" y="131.50" class="small" text-anchor="middle">+6.6</text>
+<rect x="497.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#F2E9E9" stroke="white"/>
+<text x="536.00" y="131.50" class="small" text-anchor="middle">+2.8</text>
+<rect x="575.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#F1E5E6" stroke="white"/>
+<text x="614.00" y="131.50" class="small" text-anchor="middle">+3.5</text>
+<text x="175.00" y="176.50" class="axis" text-anchor="end">Codex GPT-5.6</text>
+<rect x="185.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#ECD6D8" stroke="white"/>
+<text x="224.00" y="176.50" class="small" text-anchor="middle">+6.3</text>
+<rect x="263.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#DDA9AE" stroke="white"/>
+<text x="302.00" y="176.50" class="small" text-anchor="middle">+15.0</text>
+<rect x="341.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#C45F68" stroke="white"/>
+<text x="380.00" y="176.50" class="small" text-anchor="middle">+29.4</text>
+<rect x="419.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#E3BABE" stroke="white"/>
+<text x="458.00" y="176.50" class="small" text-anchor="middle">+11.8</text>
+<rect x="497.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#F2F3F4" stroke="white"/>
+<text x="536.00" y="176.50" class="small" text-anchor="middle">-1.1</text>
+<rect x="575.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#F4EEEF" stroke="white"/>
+<text x="614.00" y="176.50" class="small" text-anchor="middle">+1.7</text>
+<text x="175.00" y="221.50" class="axis" text-anchor="end">Codex DS-V4-F</text>
+<rect x="185.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#D59096" stroke="white"/>
+<text x="224.00" y="221.50" class="small" text-anchor="middle">+19.9</text>
+<rect x="263.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#E1B6BA" stroke="white"/>
+<text x="302.00" y="221.50" class="small" text-anchor="middle">+12.6</text>
+<rect x="341.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#CC767E" stroke="white"/>
+<text x="380.00" y="221.50" class="small" text-anchor="middle">+25.0</text>
+<rect x="419.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#E8CBCE" stroke="white"/>
+<text x="458.00" y="221.50" class="small" text-anchor="middle">+8.5</text>
+<rect x="497.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#F4EEEF" stroke="white"/>
+<text x="536.00" y="221.50" class="small" text-anchor="middle">+1.7</text>
+<rect x="575.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#F2E7E8" stroke="white"/>
+<text x="614.00" y="221.50" class="small" text-anchor="middle">+3.1</text>
+<text x="175.00" y="266.50" class="axis" text-anchor="end">Codex DS-V4-P</text>
+<rect x="185.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#DDA8AD" stroke="white"/>
+<text x="224.00" y="266.50" class="small" text-anchor="middle">+15.2</text>
+<rect x="263.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#E2B7BB" stroke="white"/>
+<text x="302.00" y="266.50" class="small" text-anchor="middle">+12.3</text>
+<rect x="341.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#C6646D" stroke="white"/>
+<text x="380.00" y="266.50" class="small" text-anchor="middle">+28.5</text>
+<rect x="419.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#E7C7CA" stroke="white"/>
+<text x="458.00" y="266.50" class="small" text-anchor="middle">+9.2</text>
+<rect x="497.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#F6F6F7" stroke="white"/>
+<text x="536.00" y="266.50" class="small" text-anchor="middle">-0.2</text>
+<rect x="575.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#C9D6E1" stroke="white"/>
+<text x="614.00" y="266.50" class="small" text-anchor="middle">-9.2</text>
+<text x="175.00" y="311.50" class="axis" text-anchor="end">Claude DS-V4-F</text>
+<rect x="185.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#D99CA2" stroke="white"/>
+<text x="224.00" y="311.50" class="small" text-anchor="middle">+17.5</text>
+<rect x="263.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#E9CCCF" stroke="white"/>
+<text x="302.00" y="311.50" class="small" text-anchor="middle">+8.3</text>
+<rect x="341.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#DEADB2" stroke="white"/>
+<text x="380.00" y="311.50" class="small" text-anchor="middle">+14.3</text>
+<rect x="419.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#EDDADC" stroke="white"/>
+<text x="458.00" y="311.50" class="small" text-anchor="middle">+5.6</text>
+<rect x="497.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#F5F2F3" stroke="white"/>
+<text x="536.00" y="311.50" class="small" text-anchor="middle">+0.9</text>
+<rect x="575.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#ECD6D8" stroke="white"/>
+<text x="614.00" y="311.50" class="small" text-anchor="middle">+6.3</text>
+<text x="175.00" y="356.50" class="axis" text-anchor="end">Claude DS-V4-P</text>
+<rect x="185.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#D48D94" stroke="white"/>
+<text x="224.00" y="356.50" class="small" text-anchor="middle">+20.4</text>
+<rect x="263.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#E9CCCE" stroke="white"/>
+<text x="302.00" y="356.50" class="small" text-anchor="middle">+8.4</text>
+<rect x="341.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#DEACB1" stroke="white"/>
+<text x="380.00" y="356.50" class="small" text-anchor="middle">+14.5</text>
+<rect x="419.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#EDD9DB" stroke="white"/>
+<text x="458.00" y="356.50" class="small" text-anchor="middle">+5.8</text>
+<rect x="497.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#F2F3F5" stroke="white"/>
+<text x="536.00" y="356.50" class="small" text-anchor="middle">-1.0</text>
+<rect x="575.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#D0DBE4" stroke="white"/>
+<text x="614.00" y="356.50" class="small" text-anchor="middle">-7.8</text>
+<text x="175.00" y="401.50" class="axis" text-anchor="end">Nanobot GPT-5.4</text>
+<rect x="185.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#C35A64" stroke="white"/>
+<text x="224.00" y="401.50" class="small" text-anchor="middle">+30.3</text>
+<rect x="263.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#DEABB0" stroke="white"/>
+<text x="302.00" y="401.50" class="small" text-anchor="middle">+14.6</text>
+<rect x="341.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#E7C6C9" stroke="white"/>
+<text x="380.00" y="401.50" class="small" text-anchor="middle">+9.4</text>
+<rect x="419.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#DA9FA5" stroke="white"/>
+<text x="458.00" y="401.50" class="small" text-anchor="middle">+17.0</text>
+<rect x="497.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#D99CA2" stroke="white"/>
+<text x="536.00" y="401.50" class="small" text-anchor="middle">+17.5</text>
+<rect x="575.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#DFE6EB" stroke="white"/>
+<text x="614.00" y="401.50" class="small" text-anchor="middle">-4.9</text>
+<text x="175.00" y="446.50" class="axis" text-anchor="end">Nanobot DS-V4-F</text>
+<rect x="185.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#CB747C" stroke="white"/>
+<text x="224.00" y="446.50" class="small" text-anchor="middle">+25.4</text>
+<rect x="263.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#E8CACD" stroke="white"/>
+<text x="302.00" y="446.50" class="small" text-anchor="middle">+8.6</text>
+<rect x="341.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#D48D94" stroke="white"/>
+<text x="380.00" y="446.50" class="small" text-anchor="middle">+20.5</text>
+<rect x="419.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#EBD3D6" stroke="white"/>
+<text x="458.00" y="446.50" class="small" text-anchor="middle">+6.9</text>
+<rect x="497.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#F6F4F4" stroke="white"/>
+<text x="536.00" y="446.50" class="small" text-anchor="middle">+0.6</text>
+<rect x="575.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#E2E8ED" stroke="white"/>
+<text x="614.00" y="446.50" class="small" text-anchor="middle">-4.3</text>
+<text x="175.00" y="491.50" class="axis" text-anchor="end">Nanobot DS-V4-P</text>
+<rect x="185.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#D99CA2" stroke="white"/>
+<text x="224.00" y="491.50" class="small" text-anchor="middle">+17.6</text>
+<rect x="263.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#E9CED1" stroke="white"/>
+<text x="302.00" y="491.50" class="small" text-anchor="middle">+7.9</text>
+<rect x="341.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#D28990" stroke="white"/>
+<text x="380.00" y="491.50" class="small" text-anchor="middle">+21.3</text>
+<rect x="419.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#EDD8DA" stroke="white"/>
+<text x="458.00" y="491.50" class="small" text-anchor="middle">+5.9</text>
+<rect x="497.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#F6F5F5" stroke="white"/>
+<text x="536.00" y="491.50" class="small" text-anchor="middle">+0.4</text>
+<rect x="575.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#DEE5EB" stroke="white"/>
+<text x="614.00" y="491.50" class="small" text-anchor="middle">-5.0</text>
+<text x="982.00" y="83.00" class="label" text-anchor="middle">Annotated-Skill Preload minus Baseline</text>
+<text x="787.00" y="95.00" class="axis" text-anchor="middle">Avg@3</text>
+<text x="865.00" y="95.00" class="axis" text-anchor="middle">TEA</text>
+<text x="943.00" y="95.00" class="axis" text-anchor="middle">TD-F1</text>
+<text x="1021.00" y="95.00" class="axis" text-anchor="middle">TCC</text>
+<text x="1099.00" y="95.00" class="axis" text-anchor="middle">REA</text>
+<text x="1177.00" y="95.00" class="axis" text-anchor="middle">DAR</text>
+<rect x="748.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#DDA9AE" stroke="white"/>
+<text x="787.00" y="131.50" class="small" text-anchor="middle">+15.1</text>
+<rect x="826.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#D2878E" stroke="white"/>
+<text x="865.00" y="131.50" class="small" text-anchor="middle">+21.7</text>
+<rect x="904.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#B42F3C" stroke="white"/>
+<text x="943.00" y="131.50" class="small" text-anchor="middle">+38.6</text>
+<rect x="982.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#DAA0A5" stroke="white"/>
+<text x="1021.00" y="131.50" class="small" text-anchor="middle">+16.9</text>
+<rect x="1060.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#F6F5F6" stroke="white"/>
+<text x="1099.00" y="131.50" class="small" text-anchor="middle">+0.3</text>
+<rect x="1138.00" y="105.00" width="78.00" height="45.00" rx="0.00" fill="#F3EAEB" stroke="white"/>
+<text x="1177.00" y="131.50" class="small" text-anchor="middle">+2.5</text>
+<rect x="748.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#F4EDEE" stroke="white"/>
+<text x="787.00" y="176.50" class="small" text-anchor="middle">+1.9</text>
+<rect x="826.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#D7969C" stroke="white"/>
+<text x="865.00" y="176.50" class="small" text-anchor="middle">+18.8</text>
+<rect x="904.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#C1545E" stroke="white"/>
+<text x="943.00" y="176.50" class="small" text-anchor="middle">+31.5</text>
+<rect x="982.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#E3BBBF" stroke="white"/>
+<text x="1021.00" y="176.50" class="small" text-anchor="middle">+11.6</text>
+<rect x="1060.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#6D95B5" stroke="white"/>
+<text x="1099.00" y="176.50" class="small" text-anchor="middle">-27.7</text>
+<rect x="1138.00" y="150.00" width="78.00" height="45.00" rx="0.00" fill="#E7EBEF" stroke="white"/>
+<text x="1177.00" y="176.50" class="small" text-anchor="middle">-3.3</text>
+<rect x="748.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#D2888F" stroke="white"/>
+<text x="787.00" y="221.50" class="small" text-anchor="middle">+21.5</text>
+<rect x="826.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#D89AA0" stroke="white"/>
+<text x="865.00" y="221.50" class="small" text-anchor="middle">+17.9</text>
+<rect x="904.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#BB444F" stroke="white"/>
+<text x="943.00" y="221.50" class="small" text-anchor="middle">+34.6</text>
+<rect x="982.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#E0B1B6" stroke="white"/>
+<text x="1021.00" y="221.50" class="small" text-anchor="middle">+13.5</text>
+<rect x="1060.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#F2E7E8" stroke="white"/>
+<text x="1099.00" y="221.50" class="small" text-anchor="middle">+3.0</text>
+<rect x="1138.00" y="195.00" width="78.00" height="45.00" rx="0.00" fill="#EFE0E2" stroke="white"/>
+<text x="1177.00" y="221.50" class="small" text-anchor="middle">+4.4</text>
+<rect x="748.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#E1B5B9" stroke="white"/>
+<text x="787.00" y="266.50" class="small" text-anchor="middle">+12.8</text>
+<rect x="826.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#D7979D" stroke="white"/>
+<text x="865.00" y="266.50" class="small" text-anchor="middle">+18.6</text>
+<rect x="904.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#BB424D" stroke="white"/>
+<text x="943.00" y="266.50" class="small" text-anchor="middle">+35.0</text>
+<rect x="982.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#DBA4A9" stroke="white"/>
+<text x="1021.00" y="266.50" class="small" text-anchor="middle">+16.0</text>
+<rect x="1060.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#F5F6F6" stroke="white"/>
+<text x="1099.00" y="266.50" class="small" text-anchor="middle">-0.4</text>
+<rect x="1138.00" y="240.00" width="78.00" height="45.00" rx="0.00" fill="#EFDEE0" stroke="white"/>
+<text x="1177.00" y="266.50" class="small" text-anchor="middle">+4.8</text>
+<rect x="748.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#DCA7AC" stroke="white"/>
+<text x="787.00" y="311.50" class="small" text-anchor="middle">+15.5</text>
+<rect x="826.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#D7969C" stroke="white"/>
+<text x="865.00" y="311.50" class="small" text-anchor="middle">+18.7</text>
+<rect x="904.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#BE4C57" stroke="white"/>
+<text x="943.00" y="311.50" class="small" text-anchor="middle">+33.0</text>
+<rect x="982.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#DEABB0" stroke="white"/>
+<text x="1021.00" y="311.50" class="small" text-anchor="middle">+14.7</text>
+<rect x="1060.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#EDF0F2" stroke="white"/>
+<text x="1099.00" y="311.50" class="small" text-anchor="middle">-2.0</text>
+<rect x="1138.00" y="285.00" width="78.00" height="45.00" rx="0.00" fill="#F1F3F4" stroke="white"/>
+<text x="1177.00" y="311.50" class="small" text-anchor="middle">-1.2</text>
+<rect x="748.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#D08188" stroke="white"/>
+<text x="787.00" y="356.50" class="small" text-anchor="middle">+22.8</text>
+<rect x="826.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#DAA1A6" stroke="white"/>
+<text x="865.00" y="356.50" class="small" text-anchor="middle">+16.6</text>
+<rect x="904.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#C0515B" stroke="white"/>
+<text x="943.00" y="356.50" class="small" text-anchor="middle">+32.1</text>
+<rect x="982.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#DFB0B4" stroke="white"/>
+<text x="1021.00" y="356.50" class="small" text-anchor="middle">+13.8</text>
+<rect x="1060.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#F4F5F6" stroke="white"/>
+<text x="1099.00" y="356.50" class="small" text-anchor="middle">-0.6</text>
+<rect x="1138.00" y="330.00" width="78.00" height="45.00" rx="0.00" fill="#E9EDF0" stroke="white"/>
+<text x="1177.00" y="356.50" class="small" text-anchor="middle">-2.8</text>
+<rect x="748.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#C25862" stroke="white"/>
+<text x="787.00" y="401.50" class="small" text-anchor="middle">+30.7</text>
+<rect x="826.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#CA7078" stroke="white"/>
+<text x="865.00" y="401.50" class="small" text-anchor="middle">+26.1</text>
+<rect x="904.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#B5313E" stroke="white"/>
+<text x="943.00" y="401.50" class="small" text-anchor="middle">+38.2</text>
+<rect x="982.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#D08289" stroke="white"/>
+<text x="1021.00" y="401.50" class="small" text-anchor="middle">+22.7</text>
+<rect x="1060.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#E4BEC1" stroke="white"/>
+<text x="1099.00" y="401.50" class="small" text-anchor="middle">+11.1</text>
+<rect x="1138.00" y="375.00" width="78.00" height="45.00" rx="0.00" fill="#CA6F77" stroke="white"/>
+<text x="1177.00" y="401.50" class="small" text-anchor="middle">+26.3</text>
+<rect x="748.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#C96D76" stroke="white"/>
+<text x="787.00" y="446.50" class="small" text-anchor="middle">+26.6</text>
+<rect x="826.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#DAA1A6" stroke="white"/>
+<text x="865.00" y="446.50" class="small" text-anchor="middle">+16.7</text>
+<rect x="904.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#BF4F59" stroke="white"/>
+<text x="943.00" y="446.50" class="small" text-anchor="middle">+32.5</text>
+<rect x="982.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#E0B3B7" stroke="white"/>
+<text x="1021.00" y="446.50" class="small" text-anchor="middle">+13.2</text>
+<rect x="1060.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#F2E8E9" stroke="white"/>
+<text x="1099.00" y="446.50" class="small" text-anchor="middle">+2.9</text>
+<rect x="1138.00" y="420.00" width="78.00" height="45.00" rx="0.00" fill="#BF505B" stroke="white"/>
+<text x="1177.00" y="446.50" class="small" text-anchor="middle">+32.2</text>
+<rect x="748.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#DCA6AB" stroke="white"/>
+<text x="787.00" y="491.50" class="small" text-anchor="middle">+15.6</text>
+<rect x="826.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#DFAEB3" stroke="white"/>
+<text x="865.00" y="491.50" class="small" text-anchor="middle">+14.1</text>
+<rect x="904.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#C35B65" stroke="white"/>
+<text x="943.00" y="491.50" class="small" text-anchor="middle">+30.1</text>
+<rect x="982.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#E2B8BC" stroke="white"/>
+<text x="1021.00" y="491.50" class="small" text-anchor="middle">+12.1</text>
+<rect x="1060.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#F1F2F4" stroke="white"/>
+<text x="1099.00" y="491.50" class="small" text-anchor="middle">-1.3</text>
+<rect x="1138.00" y="465.00" width="78.00" height="45.00" rx="0.00" fill="#C0515C" stroke="white"/>
+<text x="1177.00" y="491.50" class="small" text-anchor="middle">+32.0</text>
+<rect x="1335.00" y="105.00" width="18.00" height="34.00" rx="0.00" fill="#B22835"/>
+<text x="1359.00" y="126.00" class="small" text-anchor="start">+40</text>
+<rect x="1335.00" y="139.00" width="18.00" height="34.00" rx="0.00" fill="#C35C66"/>
+<text x="1359.00" y="160.00" class="small" text-anchor="start">+30</text>
+<rect x="1335.00" y="173.00" width="18.00" height="34.00" rx="0.00" fill="#D49096"/>
+<text x="1359.00" y="194.00" class="small" text-anchor="start">+20</text>
+<rect x="1335.00" y="207.00" width="18.00" height="34.00" rx="0.00" fill="#E6C3C6"/>
+<text x="1359.00" y="228.00" class="small" text-anchor="start">+10</text>
+<rect x="1335.00" y="241.00" width="18.00" height="34.00" rx="0.00" fill="#F7F7F7"/>
+<text x="1359.00" y="262.00" class="small" text-anchor="start">+0</text>
+<rect x="1335.00" y="275.00" width="18.00" height="34.00" rx="0.00" fill="#C5D4DF"/>
+<text x="1359.00" y="296.00" class="small" text-anchor="start">-10</text>
+<rect x="1335.00" y="309.00" width="18.00" height="34.00" rx="0.00" fill="#94B0C8"/>
+<text x="1359.00" y="330.00" class="small" text-anchor="start">-20</text>
+<rect x="1335.00" y="343.00" width="18.00" height="34.00" rx="0.00" fill="#628CB0"/>
+<text x="1359.00" y="364.00" class="small" text-anchor="start">-30</text>
+<rect x="1335.00" y="377.00" width="18.00" height="34.00" rx="0.00" fill="#306998"/>
+<text x="1359.00" y="398.00" class="small" text-anchor="start">-40</text>
+<text x="1343.00" y="435.00" class="axis" text-anchor="middle">pp</text>
+</svg>

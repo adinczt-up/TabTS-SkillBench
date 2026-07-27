@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install validation dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check benchmark_eval isolated_benchmark_runner scripts tools tests
+      - name: Verify release structure
+        run: python tools/verify_public_release.py --root .
+      - name: Reproduce and verify paper results
+        run: |
+          python scripts/paper/reproduce_all.py
+          python tools/verify_paper_results.py
+      - name: Validate evaluator contracts
+        run: >-
+          python -m benchmark_eval.cli validate
+          --experiment configs/benchmark.yaml
+          --models-config configs/models.example.yaml
+      - name: Test
+        run: python -m pytest -q
+      - name: Build distributions
+        run: python -m build --wheel --sdist
+      - name: Check source distribution contents
+        run: |
+          tar -tzf dist/*.tar.gz | grep -q '/artifacts/paper/results/main_aggregate_results.json$'
+          tar -tzf dist/*.tar.gz | grep -q '/scripts/paper/reproduce_all.py$'
+      - name: Check wheel contents
+        run: |
+          python -m venv /tmp/tabts-wheel-smoke
+          /tmp/tabts-wheel-smoke/bin/python -m pip install dist/*.whl
+          /tmp/tabts-wheel-smoke/bin/tabts-bench --help
+          /tmp/tabts-wheel-smoke/bin/tabts-bench data guide --datasets rel-hm rel-event

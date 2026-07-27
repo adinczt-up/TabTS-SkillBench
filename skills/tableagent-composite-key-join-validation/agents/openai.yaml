@@ -1,0 +1,4 @@
+interface:
+  display_name: "Composite-Key Join Validation"
+  short_description: "Validate composite joins, coverage, and row expansion."
+  default_prompt: "Use -composite-key-join-validation before aggregating records joined across tables."

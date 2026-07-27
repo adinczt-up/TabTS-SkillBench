@@ -1,0 +1,40 @@
+experiment_id: tabts_skillbench_251
+output_root: experiments/tabts_skillbench_251
+
+task_json: benchmark/evaluator/tasks_eval_251.json
+skills_root: skills
+data_root: data
+runs_root: runs
+
+frameworks: [nanobot]
+models: [deepseek_v4_flash]
+conditions:
+  baseline: {}
+  self_route: {}
+  annotated_preload:
+    base_condition: oracle_skill
+
+runtime:
+  python: ${BENCHMARK_PYTHON:-}
+  concurrency: 4
+  submission_delay_seconds: 1.5
+  batch_size: 24
+  max_tool_iterations: 120
+  turn_timeout: 1800
+  llm_timeout: 600
+  repeats: 1
+  backend: direct
+  asset_mode: copy
+  sandbox: bwrap
+  prune_workspace_datasets: true
+  keep_going: true
+  max_task_attempts: 6
+  retry_backoff_seconds: 30
+  fail_on_retry_exhausted: true
+
+judge:
+  enabled: false
+
+statistics:
+  bootstrap_samples: 10000
+  confidence: 0.95

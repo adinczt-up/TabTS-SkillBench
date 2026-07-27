@@ -1,0 +1,34 @@
+{
+  "benchmark": "TabTS-SkillBench",
+  "task_count": 251,
+  "configuration_count": 9,
+  "condition_count": 3,
+  "repeats": 3,
+  "execution_count": 20331,
+  "macro_avg_at_3": {
+    "baseline": 38.43883724361812,
+    "self_route": 57.06064630367419,
+    "annotated_preload": 56.48517042939354
+  },
+  "macro_calls": {
+    "baseline": 8.815700162313709,
+    "self_route": 20.247897299690127,
+    "annotated_preload": 22.426589936550098
+  },
+  "cross_configuration_std": {
+    "baseline": 11.34352862562758,
+    "self_route": 7.67448709438489
+  },
+  "gain_vs_baseline": {
+    "self_route": {
+      "pearson_r": -0.7633986189141314,
+      "two_sided_p": 0.016681456619011138,
+      "sample_size": 9
+    },
+    "annotated_preload": {
+      "pearson_r": -0.7641789692091397,
+      "two_sided_p": 0.0165033468201481,
+      "sample_size": 9
+    }
+  }
+}

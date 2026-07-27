@@ -1,0 +1,4 @@
+interface:
+  display_name: "Relational Schema Planning"
+  short_description: "Profile tables and plan auditable relation paths."
+  default_prompt: "Use -relational-schema-planning to inventory tables and plan a validated relation path before analysis."

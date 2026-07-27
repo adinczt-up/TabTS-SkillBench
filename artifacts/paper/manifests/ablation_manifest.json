@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "TabTS-SkillBench",
+  "task_count": 251,
+  "harness": "Nanobot",
+  "model": "DS-V4-F",
+  "result_file": "../results/ablation_paired_outcomes.csv",
+  "bootstrap_iterations": 5000,
+  "confidence": 0.95,
+  "ablations": [
+    {
+      "id": "no_temporal_skills",
+      "label": "No Temporal Skills",
+      "reference_condition": "annotated_preload",
+      "bootstrap_seed": 20260830,
+      "paper": {
+        "reference_sr": 59.0,
+        "ablated_sr": 43.0,
+        "loss": 15.9,
+        "ci_low": 9.6,
+        "ci_high": 22.3
+      }
+    },
+    {
+      "id": "description_only",
+      "label": "Description Only",
+      "reference_condition": "annotated_preload",
+      "bootstrap_seed": 20260826,
+      "paper": {
+        "reference_sr": 59.0,
+        "ablated_sr": 47.4,
+        "loss": 11.6,
+        "ci_low": 5.6,
+        "ci_high": 17.5
+      }
+    },
+    {
+      "id": "no_guardrails",
+      "label": "No Guardrails",
+      "reference_condition": "self_route",
+      "bootstrap_seed": 20260831,
+      "paper": {
+        "reference_sr": 57.8,
+        "ablated_sr": 51.4,
+        "loss": 6.4,
+        "ci_low": 0.8,
+        "ci_high": 11.6
+      }
+    },
+    {
+      "id": "text_only",
+      "label": "Text Only",
+      "reference_condition": "annotated_preload",
+      "bootstrap_seed": 20260827,
+      "paper": {
+        "reference_sr": 59.0,
+        "ablated_sr": 55.4,
+        "loss": 3.6,
+        "ci_low": -2.0,
+        "ci_high": 9.6
+      }
+    },
+    {
+      "id": "no_validator",
+      "label": "No Validator",
+      "reference_condition": "annotated_preload",
+      "bootstrap_seed": 20260828,
+      "paper": {
+        "reference_sr": 59.0,
+        "ablated_sr": 56.6,
+        "loss": 2.4,
+        "ci_low": -2.8,
+        "ci_high": 7.6
+      }
+    },
+    {
+      "id": "no_table_skills",
+      "label": "No Table Skills",
+      "reference_condition": "annotated_preload",
+      "bootstrap_seed": 20260829,
+      "paper": {
+        "reference_sr": 59.0,
+        "ablated_sr": 57.8,
+        "loss": 1.2,
+        "ci_low": -3.6,
+        "ci_high": 6.4
+      }
+    }
+  ],
+  "reproduced_outputs": [
+    "table3.csv",
+    "table3.tex"
+  ]
+}

@@ -1,0 +1,262 @@
+schema_version: 2
+reviewed_at: "2026-07-27"
+notice: >-
+  This registry records provenance and conservative release gates; it is not
+  legal advice. The TabTS-SkillBench tools never accept third-party terms on a
+  user's behalf and never automatically download a source marked
+  user_download_required. A redistribution_status of review_required or
+  local_preparation_only blocks publication of standardized binaries.
+
+datasets:
+  azure-pdm:
+    upstream_name: Microsoft Azure Predictive Maintenance sample data
+    upstream_url: https://azuremlsampleexperiments.blob.core.windows.net/datasets/
+    upstream_version: legacy Azure ML sample five-table snapshot
+    upstream_commit: null
+    retrieved_at: unknown
+    upstream_license: unconfirmed-for-the-five-table-snapshot
+    license_evidence_url: https://github.com/Azure/AI-PredictiveMaintenance
+    terms_url: null
+    acquisition_mode: manual_download_required
+    requires_user_acceptance: false
+    automatic_download: false
+    redistribution_status: review_required
+    required_attribution: Microsoft Azure Predictive Maintenance sample
+    raw_sha256: null
+    transformation_script: tools/standardize_skillmtts_datasets.py
+    output_manifest: benchmark/manifests/assets_sha256.json
+    source_layout:
+      required_globs:
+        - "**/azure-pdm/PdM_machines.csv"
+        - "**/azure-pdm/PdM_telemetry.csv"
+        - "**/azure-pdm/PdM_errors.csv"
+        - "**/azure-pdm/PdM_maint.csv"
+        - "**/azure-pdm/PdM_failures.csv"
+    user_instructions:
+      - >-
+        Review the upstream Microsoft source and confirm that your intended use
+        is permitted. The archived solution repository has CC BY 4.0 and MIT
+        files, but this registry does not assume those files license every
+        legacy five-table data snapshot.
+      - >-
+        Download PdM_machines.csv, PdM_telemetry.csv, PdM_errors.csv,
+        PdM_maint.csv, and PdM_failures.csv from the original Azure sample
+        location by appending each filename to the upstream URL. Do not use an
+        unverified third-party mirror for a formal run.
+      - >-
+        Place the five files under
+        data/sources/azure-pdm/ without renaming them.
+
+  bdg2:
+    upstream_name: Building Data Genome Project 2
+    upstream_url: https://github.com/buds-lab/building-data-genome-project-2
+    upstream_version: v1.0
+    upstream_commit: 3d0cbaf7ba281029ce04887503ab56f3c8344575
+    retrieved_at: unknown
+    upstream_license: CC-BY-SA-4.0
+    license_evidence_url: https://github.com/buds-lab/building-data-genome-project-2/blob/3d0cbaf7ba281029ce04887503ab56f3c8344575/LICENSE
+    terms_url: https://github.com/buds-lab/building-data-genome-project-2/blob/3d0cbaf7ba281029ce04887503ab56f3c8344575/LICENSE
+    acquisition_mode: upstream_checkout
+    requires_user_acceptance: false
+    automatic_download: false
+    redistribution_status: local_preparation_only
+    required_attribution: Building Data Genome Project 2 authors and source
+    raw_sha256: null
+    transformation_script: tools/standardize_skillmtts_datasets.py
+    output_manifest: benchmark/manifests/assets_sha256.json
+    source_layout:
+      required_globs:
+        - "**/buds-lab-building-data-genome-project-2-*/data/metadata/metadata.csv"
+        - "**/buds-lab-building-data-genome-project-2-*/data/weather/weather.csv"
+        - "**/buds-lab-building-data-genome-project-2-*/data/meters/raw/*.csv"
+        - "**/buds-lab-building-data-genome-project-2-*/data/meters/cleaned/*.csv"
+    user_instructions:
+      - >-
+        Review the CC BY-SA 4.0 license and preserve the required attribution
+        and ShareAlike notices.
+      - >-
+        Obtain the v1.0 source from the upstream repository at commit
+        3d0cbaf7ba281029ce04887503ab56f3c8344575.
+      - >-
+        Check it out with: git clone --branch v1.0 --depth 1
+        https://github.com/buds-lab/building-data-genome-project-2
+        data/sources/bdg2/v1.0/buds-lab-building-data-genome-project-2-v1.0
+
+  rel-f1:
+    upstream_name: RelBench rel-f1 / F1DB
+    upstream_url: https://relbench.stanford.edu/data/relbench-f1-raw.zip
+    upstream_version: RelBench v1.1.0 source definition
+    upstream_commit: 9aa346267c2e1c560bd92da07d6f4ad1ca2f0639
+    retrieved_at: unknown
+    upstream_license: CC-BY-4.0
+    license_evidence_url: https://relbench.stanford.edu/databases/f1/
+    terms_url: https://github.com/f1db/f1db/blob/main/LICENSE
+    acquisition_mode: relbench_prepared_cache
+    requires_user_acceptance: false
+    automatic_download: false
+    redistribution_status: local_preparation_only
+    required_attribution: RelBench, F1DB, and the original Formula 1 data source
+    raw_sha256: 2933348953b30aa9723b4831fea8071b336b74977bbcf1fb059da63a04f06eba
+    transformation_script: tools/standardize_skillmtts_datasets.py
+    output_manifest: benchmark/manifests/assets_sha256.json
+    source_layout:
+      required_globs:
+        - "**/rel-f1/db/circuits.parquet"
+        - "**/rel-f1/db/constructors.parquet"
+        - "**/rel-f1/db/constructor_results.parquet"
+        - "**/rel-f1/db/constructor_standings.parquet"
+        - "**/rel-f1/db/drivers.parquet"
+        - "**/rel-f1/db/qualifying.parquet"
+        - "**/rel-f1/db/races.parquet"
+        - "**/rel-f1/db/results.parquet"
+        - "**/rel-f1/db/standings.parquet"
+    user_instructions:
+      - >-
+        Review the RelBench rel-f1 data page and CC BY 4.0 attribution
+        requirements.
+      - >-
+        Use the pinned RelBench v1.1.0 implementation or an equivalent audited
+        workflow to download and verify the versioned RelBench database cache.
+        With RelBench v1.1.0, run:
+        python -c 'from relbench.datasets import get_dataset;
+        get_dataset("rel-f1", download=True).get_db()'.
+      - >-
+        Locate the cache with: python -c 'import pooch;
+        print(pooch.os_cache("relbench"))'. Copy or symlink the prepared cache
+        beneath data/sources/, or pass that cache path through --source-root.
+
+  rel-stack:
+    upstream_name: RelBench rel-stack / Stack Exchange
+    upstream_url: https://relbench.stanford.edu/data/relbench-forum-raw.zip
+    upstream_version: RelBench v1.1.0 source definition
+    upstream_commit: 9aa346267c2e1c560bd92da07d6f4ad1ca2f0639
+    retrieved_at: unknown
+    upstream_license: mixed-CC-BY-SA-by-contribution-date
+    license_evidence_url: https://stackoverflow.com/help/licensing
+    terms_url: https://stackoverflow.com/legal/terms-of-service/public
+    acquisition_mode: relbench_prepared_cache
+    requires_user_acceptance: false
+    automatic_download: false
+    redistribution_status: local_preparation_only
+    required_attribution: >-
+      Individual contributors and Stack Exchange source under the applicable
+      CC BY-SA version
+    raw_sha256: ad3bf96f35146d50ef48fa198921685936c49b95c6b67a8a47de53e90036745f
+    transformation_script: tools/standardize_skillmtts_datasets.py
+    output_manifest: benchmark/manifests/assets_sha256.json
+    source_layout:
+      required_globs:
+        - "**/rel-stack/db/users.parquet"
+        - "**/rel-stack/db/comments.parquet"
+        - "**/rel-stack/db/posts.parquet"
+        - "**/rel-stack/db/votes.parquet"
+        - "**/rel-stack/db/badges.parquet"
+        - "**/rel-stack/db/postLinks.parquet"
+        - "**/rel-stack/db/postHistory.parquet"
+    user_instructions:
+      - >-
+        Review Stack Exchange attribution requirements. The applicable CC BY-SA
+        version depends on each contribution's date.
+      - >-
+        Use the pinned RelBench v1.1.0 implementation or an equivalent audited
+        workflow to download and verify the versioned RelBench database cache.
+        With RelBench v1.1.0, run:
+        python -c 'from relbench.datasets import get_dataset;
+        get_dataset("rel-stack", download=True).get_db()'.
+      - >-
+        Locate the cache with: python -c 'import pooch;
+        print(pooch.os_cache("relbench"))'. Copy or symlink the prepared cache
+        beneath data/sources/, or pass that cache path through --source-root.
+        Do not publish it as a single permissively licensed archive.
+
+  rel-hm:
+    upstream_name: RelBench rel-hm / H&M Personalized Fashion Recommendations
+    upstream_url: https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations
+    upstream_version: Kaggle competition snapshot used by RelBench
+    upstream_commit: 9aa346267c2e1c560bd92da07d6f4ad1ca2f0639
+    retrieved_at: unknown
+    upstream_license: competition-specific-terms
+    license_evidence_url: https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/rules
+    terms_url: https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/rules
+    acquisition_mode: user_download_required
+    requires_user_acceptance: true
+    automatic_download: false
+    redistribution_status: user_download_required
+    required_attribution: RelBench, Kaggle, H&M, and the competition data provider
+    raw_sha256: null
+    transformation_script: tools/standardize_skillmtts_datasets.py
+    output_manifest: benchmark/manifests/assets_sha256.json
+    source_layout:
+      required_globs:
+        - "**/rel-hm/db/article.parquet"
+        - "**/rel-hm/db/customer.parquet"
+        - "**/rel-hm/db/transactions.parquet"
+    user_instructions:
+      - >-
+        Sign in to Kaggle, open the official competition page, and personally
+        review and accept the competition rules. TabTS-SkillBench cannot do this
+        on your behalf.
+      - >-
+        After acceptance, download the competition archive through the official
+        Kaggle web interface or your own authenticated Kaggle CLI:
+        kaggle competitions download -c
+        h-and-m-personalized-fashion-recommendations.
+      - >-
+        With RelBench v1.1.0, place the archive at
+        <working-directory>/data/hm-recommendation/h-and-m-personalized-fashion-recommendations.zip
+        and, from <working-directory>, run: python -c 'from relbench.datasets
+        import get_dataset; get_dataset("rel-hm", download=False).get_db()'.
+        Locate the resulting cache with: python -c 'import pooch;
+        print(pooch.os_cache("relbench"))'.
+      - >-
+        Copy or symlink the prepared rel-hm cache beneath data/sources/, or pass
+        the cache path through --source-root. Never commit or redistribute the
+        Kaggle archive or derived tables unless you have separate written
+        permission.
+
+  rel-event:
+    upstream_name: RelBench rel-event / Event Recommendation Engine Challenge
+    upstream_url: https://www.kaggle.com/competitions/event-recommendation-engine-challenge
+    upstream_version: Kaggle competition snapshot used by RelBench
+    upstream_commit: 9aa346267c2e1c560bd92da07d6f4ad1ca2f0639
+    retrieved_at: unknown
+    upstream_license: competition-specific-terms
+    license_evidence_url: https://www.kaggle.com/competitions/event-recommendation-engine-challenge/rules
+    terms_url: https://www.kaggle.com/competitions/event-recommendation-engine-challenge/rules
+    acquisition_mode: user_download_required
+    requires_user_acceptance: true
+    automatic_download: false
+    redistribution_status: user_download_required
+    required_attribution: RelBench, Kaggle, and the competition data provider
+    raw_sha256: null
+    transformation_script: tools/standardize_skillmtts_datasets.py
+    output_manifest: benchmark/manifests/assets_sha256.json
+    source_layout:
+      required_globs:
+        - "**/rel-event/db/events.parquet"
+        - "**/rel-event/db/users.parquet"
+        - "**/rel-event/db/event_attendees.parquet"
+        - "**/rel-event/db/event_interest.parquet"
+        - "**/rel-event/db/user_friends.parquet"
+    user_instructions:
+      - >-
+        Sign in to Kaggle, open the official competition page, and personally
+        review and accept the competition rules. TabTS-SkillBench cannot do this
+        on your behalf.
+      - >-
+        After acceptance, download the competition archive through the official
+        Kaggle web interface or your own authenticated Kaggle CLI:
+        kaggle competitions download -c
+        event-recommendation-engine-challenge.
+      - >-
+        With RelBench v1.1.0, place the archive at
+        <working-directory>/data/rel-event/event-recommendation-engine-challenge.zip
+        and, from <working-directory>, run: python -c 'from relbench.datasets
+        import get_dataset; get_dataset("rel-event", download=False).get_db()'.
+        Locate the resulting cache with: python -c 'import pooch;
+        print(pooch.os_cache("relbench"))'.
+      - >-
+        Copy or symlink the prepared rel-event cache beneath data/sources/, or
+        pass the cache path through --source-root. Never commit or redistribute
+        the Kaggle archive or derived tables unless you have separate written
+        permission.

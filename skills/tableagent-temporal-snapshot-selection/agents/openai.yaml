@@ -1,0 +1,4 @@
+interface:
+  display_name: "Temporal Snapshot Selection"
+  short_description: "Select per-entity records at temporal anchors."
+  default_prompt: "Use -temporal-snapshot-selection to materialize grouped temporal snapshots."

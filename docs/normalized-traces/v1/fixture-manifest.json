@@ -1,0 +1,95 @@
+{
+  "schema_version": "normalized-trace-v1",
+  "synthetic": true,
+  "trace_file": "synthetic-normalized-traces.jsonl",
+  "cases": [
+    {
+      "task_id": "synthetic-success-v1",
+      "synthetic": true,
+      "harness_label": "Nanobot",
+      "outcome_class": "success",
+      "expected_metrics": {
+        "passed": true,
+        "valid_completion": true,
+        "table_retrieval_f1": 1.0,
+        "temporal_operation_f1": 1.0,
+        "temporal_execution_accuracy": 1.0,
+        "temporal_strict_compliance": true
+      }
+    },
+    {
+      "task_id": "synthetic-process-error-v1",
+      "synthetic": true,
+      "harness_label": "Codex",
+      "outcome_class": "process_operation_error",
+      "expected_metrics": {
+        "passed": true,
+        "valid_completion": true,
+        "table_retrieval_f1": 1.0,
+        "temporal_operation_f1": 0.0,
+        "temporal_execution_accuracy": 0.5,
+        "temporal_strict_compliance": false
+      }
+    },
+    {
+      "task_id": "synthetic-answer-error-v1",
+      "synthetic": true,
+      "harness_label": "Claude Code",
+      "outcome_class": "answer_error",
+      "expected_metrics": {
+        "passed": false,
+        "valid_completion": true,
+        "partial_credit_score": 0.5,
+        "table_retrieval_f1": 1.0,
+        "temporal_operation_f1": 1.0,
+        "temporal_execution_accuracy": 1.0,
+        "temporal_strict_compliance": true
+      }
+    }
+  ],
+  "scoring_contract": {
+    "dataset": "synthetic_fixture",
+    "task_family": "synthetic_period_aggregate",
+    "difficulty": null,
+    "required_tables": [
+      "synthetic_observations"
+    ],
+    "candidate_tables": [
+      "synthetic_observations",
+      "synthetic_decoy"
+    ],
+    "relational_contract": {
+      "required": false
+    },
+    "temporal_contract": {
+      "required": true,
+      "time_literals": [],
+      "anchors": [],
+      "required_operations": [
+        "period_aggregate"
+      ],
+      "required_dependencies": [],
+      "required_granularities": [
+        "month"
+      ],
+      "required_parameters": [],
+      "leakage_policy": {
+        "required": false
+      }
+    },
+    "required_skills": [],
+    "required_execution_skills": [],
+    "answer_contract": {
+      "gold_rows": [
+        {
+          "item": "sample-a",
+          "value": 2
+        }
+      ],
+      "key_fields": [
+        "item"
+      ],
+      "numeric_tolerances": {}
+    }
+  }
+}

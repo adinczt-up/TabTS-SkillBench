@@ -1,0 +1,9 @@
+models:
+  deepseek_v4_flash:
+    base_config: ${NANOBOT_CONFIG:-~/.nanobot/config.json}
+    provider: dashscope
+    model: deepseek-v4-flash
+    temperature: 0
+    max_tokens: 8192
+    llm_timeout: 600
+    provider_retry_mode: persistent
